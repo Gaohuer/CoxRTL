@@ -1,0 +1,10 @@
+^\.git$
+^\.gitignore$
+^\.Rbuildignore$
+^\.Rproj\.user$
+^.*\.Rproj$
+^data-raw$
+^useful\_commands\.txt$
+^LICENSE\.md$
+^README\.md$
+^LICENSE$

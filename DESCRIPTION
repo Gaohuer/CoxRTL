@@ -1,0 +1,35 @@
+Package: CoxRTL
+Type: Package
+Title: Deployment-Oriented Recalibrated Transfer Learning for Survival
+        Prediction
+Version: 0.1.5
+Authors@R: 
+    c(
+    person(given="Huer", family="Gao", email="26111020050@m.fudan.edu.cn", role=c("aut", "cre","cph")),
+    person(given="Lulu", family="Pan", email="25111020061@m.fudan.edu.cn", role = c("aut","cph")),
+    person(given="Yongfu", family="Yu", role = c("ctb","cph")),
+    person(given="Guoyou", family="Qin", role=c("ctb","cph"))
+    )
+Description: Implements deployment-oriented recalibrated transfer learning for
+    survival prediction. The package simulates target, deployment and
+    external survival datasets under covariate shift, estimates density-ratio
+    weights for covariate-shift correction, fits penalized Cox baseline models, 
+    as well as two-step transfer-learning models with or without recalibration toward the
+    deployment population. The methodology is described in Pan et al. 
+    (2026) <doi:10.1038/s42256-026-01285-x>.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0.0), survival
+Imports: MASS, glmnet, foreach, doParallel, parallel, stats
+Suggests: knitr, rmarkdown, timeROC, survAUC, survcomp, testthat (>=
+        3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+RoxygenNote: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-10-26 01:18:14 UTC; ceesuu
+Author: Huer Gao [aut, cre, cph],
+  Lulu Pan [aut, cph],
+  Yongfu Yu [ctb, cph],
+  Guoyou Qin [ctb, cph]
+Maintainer: Huer Gao <26111020050@m.fudan.edu.cn>
